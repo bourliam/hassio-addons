@@ -3,7 +3,7 @@ version: 2.2.1
 slug: assist_microphone
 name: Assist Microphone
 description: Stream microphone audio to Assist
-url: https://github.com/rhasspy/hassio-addons
+url: https://github.com/bourliam/hassio-addons
 hassio_api: true
 arch:
   - amd64
@@ -11,6 +11,7 @@ arch:
 map:
   - share:rw
 options:
+  host: null
   token: null
   vad: "disabled"
   volume: 1.0
@@ -25,6 +26,7 @@ options:
   debug_logging: false
   debug_recording_dir: ""
 schema:
+  host: str
   token: str
   vad: list(disabled|webrtcvad|silero)
   volume: float
